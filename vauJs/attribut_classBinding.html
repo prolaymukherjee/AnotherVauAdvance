@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This is vue</title>
+		<link >
+	</head>
+	<body>
+		<h3>This is start vue Framwork</h3>
+		
+		<div id="p">
+			<ul>
+				<li>
+					<a :href="link1.url"  v-bind:title="link1.title">{{ link1.text }}</a>
+				</li>
+				
+				<li>
+					<a :href="link2.url"  v-bind:title="link2.title">{{ link2.text }}</a>
+				</li>
+			</ul>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+		<script>
+			new Vue({
+				el:'#p',
+				data:{
+				  link1:{
+					text:"facebook",title:"Go to Facebook",url:"http://facebook.com"
+					},
+				  link2:{
+				    text:"youtube",title:"Go to youtube",url:"http://youtube.com"
+					  }
+				   }	
+				})
+		</script>
+	</body>
+</html>

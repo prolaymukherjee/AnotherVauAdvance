@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This is vue</title>
+		<link >
+	</head>
+	<body>
+		<h3>This is start vue Framwork</h3>
+		
+		<div id="p">
+			<p>Enter Your name:</p>
+			<input type="text" v-model="name">
+			<br>
+			<h2>Your Name is {{name}}</h2>
+		<div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+		<script>
+			new Vue({
+				el:'#p',
+				data:{
+					name:'prolay'
+				}		
+			})
+		</script>
+	</body>
+</html>
